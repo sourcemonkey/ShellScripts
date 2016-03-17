@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- ラベル -->
+  <key>Label</key>
+  <string>ProcPerfLoggin</string>
+
+  <!-- スクリプト設定 -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/fumiaki.sato/tmp/TestProject/work/ProcPerfLoggin/main.sh</string>
+    <string>12534</string>
+  </array>
+
+  <!-- launchctl loadしたタイミングで実行するか -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- 実行間隔 -->
+  <key>StartInterval</key>
+  <integer>10</integer>
+
+  <!-- ログの指定 -->
+  <key>StandardOutPath</key>
+  <!-- <string>/tmp/ProcPerfLoggin/debug.log</string> -->
+  <string>/dev/null</string>
+
+</dict>
+</plist>
