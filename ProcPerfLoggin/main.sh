@@ -23,9 +23,6 @@ esac
 
 # 対象PIDのps情報を設定
 LINE="${TIME} "`ps aux | awk '{ if($2 == '${PID}') print }'`
-# echo `ps aux | gawk '{ if($2 == '${PID}') print}'`
-# echo `ps aux | grep ruby`
-# echo `ps aux | grep ruby | awk '{print $2}'`
 
 # 対象PIDのps情報が無ければ終了
 [ -z "${LINE}" ] && exit
